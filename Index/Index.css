@@ -1,0 +1,24 @@
+html {
+  background-color: #ADD8E6;
+  font-family: 'Karla', sans-serif;
+}
+.navigation {
+  background-color: #9bc2cf;
+  border: 1px solid #9bc2cf;
+  border-radius: 20px;
+  font-size: 1.1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2.3px;
+}
+.navigation #title {
+  display: inline-block;
+  border-right: 2px solid black;
+  padding-right: 2px;
+  font-size: 1.2em;
+  margin: 0;
+}
