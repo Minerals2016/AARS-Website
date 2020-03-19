@@ -5,10 +5,10 @@ html {
 .navigation {
   background-color: #9bc2cf;
   border: 1px solid #9bc2cf;
-  border-radius: 20px;
   font-size: 1.1em;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 100%;
 }
 .navigation a {
   text-decoration: none;
@@ -18,7 +18,40 @@ html {
 .navigation #title {
   display: inline-block;
   border-right: 2px solid black;
+  padding-left: 5px;
   padding-right: 2px;
-  font-size: 1.2em;
+  font-size: 1.25em;
+  vertical-align: baseline;
   margin: 0;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  float: right;
+  font-size: 1.5em;
+  margin-right: 3px;
+  margin-top: -5px;
+  user-select: none;
+}
+.menu {
+  text-align: left;
+  width: 100%;
+  display: none;
+  margin-right: 10px;
+}
+.menu a {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  vertical-align: baseline;
+  border-bottom: 1px grey solid;
+}
+#toggle {
+  display: none;
+}
+#toggle:checked + .menu {
+  display: block;
+  border-top: 1px solid black;
 }
