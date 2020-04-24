@@ -32,11 +32,11 @@ body{
 /*navigation bar styling and support #9bc2cf, #425b5e*/
 .navigation {
   font-family: 'Karla', sans-serif;
-  background-color: white;
+  background-color: lightblue;
   border: 1px solid white;
   font-size: 1.1em;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   width: 100%;
 }
 .navigation a {
@@ -46,10 +46,10 @@ body{
 }
 .navigation #title {
   display: inline-block;
-  border-right: 2px solid black;
-  padding-left: 5px;
-  padding-right: 2px;
-  font-size: 1.25em;
+  border-right: 5px solid black;
+  padding-left: 15px;
+  padding-right: 20px;
+  font-size: 4em;
   margin: 0;
 }
 label {
@@ -57,9 +57,9 @@ label {
   cursor: pointer;
   width: 30px;
   float: right;
-  font-size: 1.5em;
-  margin-right: 3px;
-  margin-top: -5px;
+  font-size: 4em;
+  margin-right: 0.7em;
+  margin-top: -0.1em;
   user-select: none;
 }
 .menu {
@@ -69,13 +69,13 @@ label {
   margin-right: 10px;
   margin-top: 5px;
   margin-bottom: -5px;
+  font-size: 3em;
 }
 .menu a {
   display: block;
   margin: 0;
   padding: 10px;
-  vertical-align: baseline;
-  border-bottom: 1px grey solid;
+  border-bottom: 1px black solid;
 }
 .menu a:hover {
   background-color: #afced8;
@@ -88,54 +88,10 @@ label {
   border-top: 1px solid black;
 }
 
-/*article formatting*/
-#head-img {
-  width: 100%;
-  height: 40%
-}
-#button {
-  float: right;
-  margin-right: 1.5em;
-}
-div[class^="sec"] h2 {
-  font-size: 1.7em;
-}
-div[class^="sec"] p{
-  font-size: 1.1em;
-}
-div[class^="sec"] button {
-  font-size: 0.9em;
-}
+
+
+
 /*css grid decleration*/
 nav {
   grid-area: nav;
-}
-.sec1 {
-  grid-area: sec1;
-  background-color: lightblue;
-}
-.sec2 {
-  grid-area: sec2;
-  background-color: green;
-}
-.sec3 {
-  grid-area: sec3;
-}
-.sec4 {
-  grid-area: sec4;
-}
-.sec5 {
-  grid-area: sec5;
-}
-.sec6 {
-  grid-area: sec6;
-}
-.sec7 {
-  grid-area: sec7;
-}
-.sec8 {
-  grid-area: sec8;
-}
-.sec9 {
-  grid-area: sec9;
 }
