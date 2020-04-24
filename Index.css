@@ -1,0 +1,135 @@
+/*css reset*/
+* {
+  reset: all;
+}
+/*page formatting*/
+html {
+  background-color: #ADD8E6;
+  font-family: 'Karla', sans-serif;
+  height: 100%;
+}
+
+/*css grid*/
+body{
+  display: grid;
+  grid-template-columns: 0.0fr 1fr 1fr 1fr 0.0fr;
+  grid-template-areas:
+    "nav nav nav nav nav"
+    ". sec1 sec1 sec1 ."
+    ". sec2 sec2 sec2 ."
+    ". sec3 sec3 sec3 ."
+    ". sec4 sec4 sec4 ."
+    ". sec5 sec5 sec5 ."
+    ". sec6 sec6 sec6 ."
+    ". sec7 sec7 sec7 ."
+    ". sec8 sec8 sec8 ."
+    ". sec9 sec9 sec9 ."
+}
+
+/*navigation bar styling and support*/
+.navigation {
+  background-color: #9bc2cf;
+  border: 1px solid #9bc2cf;
+  font-size: 1.1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2.3px;
+}
+.navigation #title {
+  display: inline-block;
+  border-right: 2px solid black;
+  padding-left: 5px;
+  padding-right: 2px;
+  font-size: 1.25em;
+  margin: 0;
+}
+label {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  float: right;
+  font-size: 1.5em;
+  margin-right: 3px;
+  margin-top: -5px;
+  user-select: none;
+}
+.menu {
+  text-align: left;
+  width: 100%;
+  display: none;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+.menu a {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  vertical-align: baseline;
+  border-bottom: 1px grey solid;
+}
+.menu a:hover {
+  background-color: #afced8;
+}
+#toggle {
+  display: none;
+}
+#toggle:checked + .menu {
+  display: block;
+  border-top: 1px solid black;
+}
+
+/*article formatting*/
+#head-img {
+  width: 100%;
+  height: 40%
+}
+#button {
+  float: right;
+  margin-right: 1.5em;
+}
+div[class^="sec"] h2 {
+  font-size: 1.7em;
+}
+div[class^="sec"] p{
+  font-size: 1.1em;
+}
+div[class^="sec"] button {
+  font-size: 0.9em;
+}
+/*css grid decleration*/
+nav {
+  grid-area: nav;
+}
+.sec1 {
+  grid-area: sec1;
+}
+.sec2 {
+  grid-area: sec2;
+}
+.sec3 {
+  grid-area: sec3;
+}
+.sec4 {
+  grid-area: sec4;
+}
+.sec5 {
+  grid-area: sec5;
+}
+.sec6 {
+  grid-area: sec6;
+}
+.sec7 {
+  grid-area: sec7;
+}
+.sec8 {
+  grid-area: sec8;
+}
+.sec9 {
+  grid-area: sec9;
+}

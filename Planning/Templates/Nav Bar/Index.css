@@ -40,6 +40,8 @@ label {
   width: 100%;
   display: none;
   margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: -5px;
 }
 .menu a {
   display: block;
@@ -47,6 +49,9 @@ label {
   padding: 10px;
   vertical-align: baseline;
   border-bottom: 1px grey solid;
+}
+.menu a:hover {
+  background-color: #afced8;
 }
 #toggle {
   display: none;
