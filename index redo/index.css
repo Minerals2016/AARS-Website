@@ -9,16 +9,19 @@ html {
   background-color: white;
   height: 100%;
   color: black;
+  font-weight: lighter;
 }
-
-/*css grid*/
 body{
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+}
+/*css grid*/
+.grid {
   display: grid;
-  font-family: 'Noto Sans', sans-serif;
+  margin-top: 2em;
+  font-family: 'Muli', sans-serif;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
   grid-template-areas:
-    "nav nav nav nav nav"
-    ". sec1 sec1 sec1 ."
     ". sec2 sec2 sec2 ."
     ". sec3 sec3 sec3 ."
     ". sec4 sec4 sec4 ."
@@ -28,7 +31,6 @@ body{
     ". sec8 sec8 sec8 ."
     ". sec9 sec9 sec9 ."
 }
-
 /*navigation bar styling and support #9bc2cf, #425b5e*/
 .navigation {
   font-family: 'Karla', sans-serif;
@@ -38,6 +40,8 @@ body{
   padding-top: 1em;
   padding-bottom: 1em;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .navigation a {
   text-decoration: none;
@@ -58,7 +62,7 @@ label {
   width: 30px;
   float: right;
   font-size: 4em;
-  margin-right: 0.7em;
+  margin-right: 1em;
   margin-top: -0.1em;
   user-select: none;
 }
@@ -67,8 +71,8 @@ label {
   width: 100%;
   display: none;
   margin-right: 10px;
-  margin-top: 5px;
-  margin-bottom: -5px;
+  margin-top: 20px;
+  margin-bottom: -10px;
   font-size: 3em;
 }
 .menu a {
@@ -76,6 +80,7 @@ label {
   margin: 0;
   padding: 10px;
   border-bottom: 1px black solid;
+  padding-left: 1em;
 }
 .menu a:hover {
   background-color: #afced8;
@@ -88,10 +93,67 @@ label {
   border-top: 1px solid black;
 }
 
+/*hero image styling and support*/
+.sec1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.instructables.com/ORIG/FBQ/VGXH/JTIYMEFJ/FBQVGXHJTIYMEFJ.png?auto=webp");
+  height: 88%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 1em;
+}
+.text {
+  height: 100%;
+}
+#head1 {
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  line-height: 40px;
+  font-size: 6em;
+  color: white;
+}
+#desc1 {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-size: 4em;
+  color: white;
+}
+#button1 {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  font-size: 3em;
+}
+#cap1 {
+  text-align: right;
+  position: absolute;
+  top: 96%;
+  font-size: 0.7em;
+  width: 100%;
+  color: white;
+}
 
-
+/*additional styling*/
+.sec2 h2 {
+  font-size: 3em;
+}
+.sec2 p{
+  font-size: 1.2em;
+}
+/*global decleration*/
+#head-img {
+  width: 100%;
+}
 
 /*css grid decleration*/
 nav {
   grid-area: nav;
+}
+.sec2 {
+  grid-area: sec2;
 }
