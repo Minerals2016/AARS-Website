@@ -6,19 +6,22 @@
 /*page formatting*/
 /*#ADD8E6*/
 html {
-  background-color: white;
+  background-color: #3E5C59;
   height: 100%;
   color: black;
+  font-weight: lighter;
 }
-
-/*css grid*/
 body{
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+}
+/*css grid*/
+.grid {
   display: grid;
-  font-family: 'Noto Sans', sans-serif;
+  margin-top: 2em;
+  font-family: 'Muli', sans-serif;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
   grid-template-areas:
-    "nav nav nav nav nav"
-    ". sec1 sec1 sec1 ."
     ". sec2 sec2 sec2 ."
     ". sec3 sec3 sec3 ."
     ". sec4 sec4 sec4 ."
@@ -26,17 +29,14 @@ body{
     ". sec6 sec6 sec6 ."
     ". sec7 sec7 sec7 ."
     ". sec8 sec8 sec8 ."
-    ". sec9 sec9 sec9 ."
+    "sec9 sec9 sec9 sec9 sec9"
 }
-
-/*navigation bar styling and support #9bc2cf, #425b5e*/
 .navigation {
   font-family: 'Karla', sans-serif;
-  background-color: white;
-  border: 1px solid white;
+  background-color: lightblue;
   font-size: 1.1em;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
 }
 .navigation a {
@@ -49,7 +49,7 @@ body{
   border-right: 2px solid black;
   padding-left: 5px;
   padding-right: 2px;
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin: 0;
 }
 label {
@@ -57,7 +57,7 @@ label {
   cursor: pointer;
   width: 30px;
   float: right;
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin-right: 3px;
   margin-top: -5px;
   user-select: none;
@@ -67,8 +67,8 @@ label {
   width: 100%;
   display: none;
   margin-right: 10px;
-  margin-top: 5px;
-  margin-bottom: -5px;
+  margin-top: 10px;
+  margin-bottom: -10px;
 }
 .menu a {
   display: block;
@@ -88,35 +88,114 @@ label {
   border-top: 1px solid black;
 }
 
-/*article formatting*/
+/*hero image styling and support*/
+.sec1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.instructables.com/ORIG/FBQ/VGXH/JTIYMEFJ/FBQVGXHJTIYMEFJ.png?auto=webp");
+  height: 88%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.text {
+  height: 100%;
+}
+#head1 {
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  line-height: 40px;
+  color: white;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+#desc1 {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+#button1 {
+  position: absolute;
+  top: 75%;
+  left: 57%;
+  font-weight: lighter;
+  font-size: 1em;
+}
+#cap1 {
+  text-align: right;
+  position: absolute;
+  top: 96%;
+  right: 3.5%;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+}
+
+/*additional styling*/
+.sec1 button {
+  background-color: #3E5C59;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+}
+.sec1 button:hover {
+  background-color: #778c8a;
+}
+footer {
+  background-color: lightblue;
+  text-align: center;
+  font-size: 0.8em;
+}
+/*global decleration*/
 #head-img {
   width: 100%;
-  height: 40%
 }
-#button {
-  float: right;
-  margin-right: 1.5em;
+.grid h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-div[class^="sec"] h2 {
-  font-size: 1.7em;
+.grid p {
+  font-size: 1em;
+  padding-left: 25px;
+  padding-right: 20px;
+  margin-bottom: 10px;
 }
-div[class^="sec"] p{
-  font-size: 1.1em;
+.grid img {
+  border-radius: 30px;
 }
-div[class^="sec"] button {
-  font-size: 0.9em;
-}
-/*css grid decleration*/
-nav {
-  grid-area: nav;
-}
-.sec1 {
-  grid-area: sec1;
+.grid div[class^="sec"] {
+  margin-bottom: 40px;
   background-color: lightblue;
+  border-radius: 30px;
+  padding-bottom: 20px;
 }
+.grid button {
+  float: right;
+  padding: 5px;
+  border-radius: 20px;
+  margin-right: 15px;
+  font-size: 0.9em;
+  margin-top: 5px;
+  background-color: #F797A5;
+  border: 1px solid black;
+}
+.grid button:hover {
+  background-color: #f8abb7;
+}
+
+/*css grid decleration*/
 .sec2 {
   grid-area: sec2;
-  background-color: green;
 }
 .sec3 {
   grid-area: sec3;
@@ -136,6 +215,6 @@ nav {
 .sec8 {
   grid-area: sec8;
 }
-.sec9 {
+footer {
   grid-area: sec9;
 }
