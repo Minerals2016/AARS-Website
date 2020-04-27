@@ -174,11 +174,12 @@ footer {
   border-radius: 30px;
 }
 .grid div[class^="sec"] {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
   background-color: lightblue;
   border-radius: 30px;
   padding-bottom: 20px;
 }
+
 .grid button {
   float: right;
   padding: 5px;

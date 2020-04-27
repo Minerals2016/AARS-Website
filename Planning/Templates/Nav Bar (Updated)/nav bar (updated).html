@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="nav bar (updated).css">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARS | Home</title>
+  </head>
+
+
+  <body>
+    <nav class="navigation">
+      <p id="title">Project AARS</p>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+        <a href="index.html" id="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Development</a>
+        <a href="#">Resouces</a>
+        <a href="#">Demonstration</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </body>
+</html>
+
+<style type="text/css">
+  /*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*page formatting*/
+html {
+  background-color: #3E5C59;
+  height: 100%;
+  color: black;
+  font-weight: lighter;
+}
+body{
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+}
+/*css grid*/
+.grid {
+  display: grid;
+  margin-top: 2em;
+  font-family: 'Muli', sans-serif;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+  grid-template-areas:
+    ". sec2 sec2 sec2 ."
+    ". sec3 sec3 sec3 ."
+    ". sec4 sec4 sec4 ."
+    ". sec5 sec5 sec5 ."
+    ". sec6 sec6 sec6 ."
+    ". sec7 sec7 sec7 ."
+    ". sec8 sec8 sec8 ."
+    "sec9 sec9 sec9 sec9 sec9"
+}
+.navigation {
+  font-family: 'Karla', sans-serif;
+  background-color: lightblue;
+  font-size: 1.1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2.3px;
+}
+.navigation #title {
+  display: inline-block;
+  border-right: 2px solid black;
+  padding-left: 5px;
+  padding-right: 2px;
+  font-size: 1.5em;
+  margin: 0;
+}
+label {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  float: right;
+  font-size: 1.6em;
+  margin-right: 3px;
+  margin-top: -5px;
+  user-select: none;
+}
+.menu {
+  text-align: left;
+  width: 100%;
+  display: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.menu a {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  vertical-align: baseline;
+  border-bottom: 1px grey solid;
+}
+.menu a:hover {
+  background-color: #afced8;
+}
+#toggle {
+  display: none;
+}
+#toggle:checked + .menu {
+  display: block;
+  border-top: 1px solid black;
+}
+</style>
