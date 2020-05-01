@@ -114,14 +114,14 @@ footer {
   text-align: center;
   font-size: 0.8em;
 }
-footer p{
+footer p {
   font-size: 1em;
   padding-left: 25px;
   padding-right: 20px;
   margin-bottom: 10px;
 }
 .sec2 {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   padding-bottom: 20px;
 }
 
@@ -141,7 +141,7 @@ footer p{
   padding-left: 18px;
   padding-right: 8px;
   margin-top: 7px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /*css grid decleration*/
