@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="demonstration.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARS | About</title>
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <p id="title">Project AARS</p>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+        <a href="../index.html" id="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="../Development/development.html">Development</a>
+        <a href="#">Resouces</a>
+        <a href="#">Demonstration</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <div class="grid">
+      <div class="sec1">
+        <img src="main_image.png">
+      </div>
+      <div class="sec2">
+        <form action="index.html" id="form1">
+        <div class="grid2">
+          <p id="select">Select ID:</p>
+          <select id="identification-select">
+            <option value="66236">66236</option>
+            <option value="63563">63563</option>
+            <option value="15433">15433</option>
+            <option value="15134">15134</option>
+            <option value="53366">53366</option>
+            <option value="51166">51166</option>
+          </select>
+          <button type="button" name="button" id="view-button" onclick="window.location.href = 'https://www.google.com';">View Output</button>
+          <input type="submit" value="Scan ID" id="submit-button">
+        </div>
+        </form>
+        <hr>
+
+        <h1 id="title1">Demonstration</h1>
+        <p id="desc">This page is the simulator to the actual hardware. This was going to be drag and drop but because of time constraints this did not happen. This is the simplest way that we came up with and that would work to simulate the hardware. Have fun with the trial!</p>
+
+        <h2>Instructions</h2>
+        <p>This may seem pretty straight forward but it might confuse some people. In order to effectively simulate the hardware, you will need to select any of the IDs that are listed. PLease do not choose the same ID more than once. The buttons are used to complete the simulation either by scanning the RFID card/tag or by going to the dashboard. Order of clicking does not matter, but you may want to open the dashboard (by clicking the button) first and then view the data update as you scan the card. The data should show up in the dashboard and you should be done with the simulation. Please make sure to use all IDs for best result. Have fun! (we know this may not be that fun to watch but we took the time to do it, please appreciate it a little bit)</p>
+      </div>
+
+      <footer>
+        <p><em>Coded with <3 by the team leader <br> Copyright &copy; 2020 Team AARS</em></p>
+      </footer>
+    </div>
+  </body>
+</html>
