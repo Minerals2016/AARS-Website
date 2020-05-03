@@ -170,7 +170,6 @@ hr {
   font-size: 1em;
 }
 
-
 /*second grid*/
 .grid2 {
   display: grid;
@@ -181,6 +180,56 @@ hr {
     "select iselect iselect iselect"
     ". vbutton vbutton sbutton"
 }
+
+/*laptop version*/
+@media only screen and (min-width: 1080px) {
+  .navigation {
+    font-size: 1.5em;
+  }
+  .navigation label {
+    margin-right: 20px;
+  }
+  .grid h1 {
+    font-size: 2.5em;
+  }
+  .grid h2 {
+    font-size: 2em;
+  }
+  .grid p, table {
+    font-size: 1.25em;
+  }
+  .sec2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .grid img {
+    height: 100%;
+    border-radius: 30px;
+  }
+  .sec1 {
+    height: 65%;
+  }
+  .sec2 {
+    margin-top: -26.5%;
+  }
+  .grid {
+    display: grid;
+    margin-top: 10px;
+    font-family: 'Muli', sans-serif;
+    grid-template-columns: 0.1fr 1fr 6fr 1fr 0.1fr;
+    grid-template-areas:
+      ". sec1 sec1 sec1 ."
+      ". . sec2 . ."
+      ". sec3 sec3 sec3 ."
+      ". sec4 sec4 sec4 ."
+      ". sec5 sec5 sec5 ."
+      ". sec6 sec6 sec6 ."
+      ". sec7 sec7 sec7 ."
+      ". sec8 sec8 sec8 ."
+      "sec9 sec9 sec9 sec9 sec9"
+  }
+}
+
 
 /*css grid decleration*/
 .sec1 {

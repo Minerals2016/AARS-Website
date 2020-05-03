@@ -152,6 +152,10 @@ footer {
   text-align: center;
   font-size: 0.8em;
 }
+.sec2 {
+  display: none;
+}
+
 /*global decleration*/
 #head-img {
   width: 100%;
@@ -193,6 +197,53 @@ footer {
 .grid button:hover {
   background-color: #f8abb7;
 }
+
+/*laptop version*/
+@media only screen and (min-width: 1080px) {
+  .navigation {
+    font-size: 1.5em;
+  }
+  .navigation label {
+    margin-right: 20px;
+  }
+
+  #head1 {
+      font-size: 4em;
+  }
+  #desc1 {
+    font-size: 2em;
+    width: 70%;
+  }
+  #button1 {
+    left: 80%;
+    font-size: 1.3em;
+  }
+  .grid {
+    display: grid;
+    margin-top: 2em;
+    font-family: 'Muli', sans-serif;
+    grid-column-gap: 20px;
+    grid-template-columns: 0.02fr 1fr 1fr 1fr 0.02fr;
+    grid-template-areas:
+      ". sec3 sec4 sec5 ."
+      ". sec6 sec7 sec8 ."
+      "sec9 sec9 sec9 sec9 sec9"
+  }
+  .grid h2 {
+    font-size: 2em;
+  }
+  .grid p {
+    font-size: 1.25em;
+  }
+  #button {
+    margin-top: 10px;
+    margin-right: 25px;
+    font-size: 1.2em;
+  }
+}
+
+
+
 
 /*css grid decleration*/
 .sec2 {
