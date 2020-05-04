@@ -151,6 +151,39 @@ hr {
   margin-top: 20px;
   color: #8aacb8;
 }
+
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+}
+#desc {
+  text-align: center;
+  padding: 0;
+}
+#link {
+  text-decoration: underline;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+#separate {
+  background-color: #8aacb8;
+}
+#view-button {
+  display: none;
+}
+.hide {
+  display: none;
+}
 /*global styling*/
 .sec2 h1 {
   font-size: 1.9em;
@@ -211,6 +244,9 @@ hr {
   }
   .sec2 {
     margin-top: -26.5%;
+  }
+  .hide {
+    display: table-cell;
   }
   .grid {
     display: grid;

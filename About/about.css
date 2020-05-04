@@ -193,7 +193,11 @@ footer p {
   }
 }
 
-
+div[class^="sec"] {
+  max-width: 1400px; /*so it'll scale until it gets to that width*/
+  margin: 0 auto; /*so its centered*/
+  height: 100% /*to preserve what was given in the body tag*/
+}
 
 /*css grid decleration*/
 .sec1 {

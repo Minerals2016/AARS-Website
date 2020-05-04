@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="demonstration.css">
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/582537481098887179/704980855088611369/674579782335201290.png">
+    <script type="text/javascript" src="../DB Code/database.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AARS | Demonstration</title>
@@ -12,7 +14,7 @@
 
   <body>
     <nav class="navigation">
-      <p id="title">Project AARS</p>
+      <a href="../index.html" id="title">Project AARS</a>
       <label for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle">
       <div class="menu">
@@ -30,6 +32,78 @@
         <img src="https://cdn.iflscience.com/images/fc73699c-016e-503d-8276-8fa13fcf3d49/extra_large-1497452655-cover-image.jpg">
       </div>
       <div class="sec2">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th class="hide">ID</th>
+            <th class="hide">Grade</th>
+            <th>Status</th>
+            <th class="hide">Time Scanned</th>
+            <th>Comments</th>
+          </tr>
+          <tr id="person1">
+            <td id="s_name">Surabhi</td>
+            <td class="hide" id="s_id">66236</td>
+            <td class="hide" id="s_grade">10th</td>
+            <td id="s_status">N/A</td>
+            <td class="hide" id="s_time">N/A</td>
+            <td id="s_comments">N/A</td>
+          </tr>
+          <tr id="person2">
+            <td id="p_name">Phoenix</td>
+            <td class="hide" id="p_id">63563</td>
+            <td class="hide" id="p_grade">10th</td>
+            <td id="p_status">N/A</td>
+            <td class="hide" id="p_time">N/A</td>
+            <td id="p_comments">N/A</td>
+          </tr>
+          <tr id="person3">
+            <td id="k_name">Kevin</td>
+            <td class="hide" id="k_id">15433</td>
+            <td class="hide" id="k_grade">10th</td>
+            <td id="k_status">Absent</td>
+            <td class="hide" id="k_time">N/A</td>
+            <td id="k_comments">N/A</td>
+          </tr>
+          <tr id="person4">
+            <td id="j_name">Jimmy</td>
+            <td class="hide" id="j_id">15134</td>
+            <td class="hide" id="j_grade">10th</td>
+            <td id="j_status"></td>
+            <td class="hide" id="j_time"></td>
+            <td id="j_comments"></td>
+          <tr id="separate">
+            <td id="n_name"></td>
+            <td class="hide" id="n_id"></td>
+            <td class="hide" id="n_grade"></td>
+            <td id="n_status"></td>
+            <td class="hide" id="n_time"></td>
+            <td id="n_comments"></td>
+          <tr id="person5">
+            <td id="t_name">Test Student</td>
+            <td class="hide" id="t_id">53366</td>
+            <td class="hide" id="t_grade">9th</td>
+            <td id="t_status">Wrong Class</td>
+            <td class="hide" id=" t_time">11:56pm</td>
+            <td id="t_comments">Always skips class</td>
+          <tr>
+            <td></td>
+            <td class="hide"></td>
+            <td class="hide"></td>
+            <td></td>
+            <td class="hide"></td>
+            <td></td>
+          <tr>
+            <td></td>
+            <td class="hide"></td>
+            <td class="hide"></td>
+            <td></td>
+            <td class="hide"></td>
+            <td></td>
+        </table>
+
+
+
         <form action="index.html" id="form1">
         <div class="grid2">
           <p id="select">Select ID:</p>
@@ -41,8 +115,8 @@
             <option value="53366">53366</option>
             <option value="51166">51166</option>
           </select>
-          <button type="button" name="button" id="view-button" onclick="window.location.href = 'https://www.google.com';">View Output</button>
-          <input type="submit" value="Scan ID" id="submit-button">
+          <button type="button" name="button" id="view-button" onclick="window.location.href = '../Dashboard/dashboard.html';">View Output</button>
+          <button type="button" onclick="scan();" id="submit-button">Scan ID</button>
         </div>
         </form>
         <hr>
@@ -51,7 +125,7 @@
         <p id="desc">This page is the simulator to the actual hardware. This was going to be drag and drop but because of time constraints this did not happen. This is the simplest way that we came up with and that would work to simulate the hardware. Have fun with the trial!</p>
 
         <h2>Instructions</h2>
-        <p>This may seem pretty straight forward but it might confuse some people. In order to effectively simulate the hardware, you will need to select any of the IDs that are listed. PLease do not choose the same ID more than once. The buttons are used to complete the simulation either by scanning the RFID card/tag or by going to the dashboard. Order of clicking does not matter, but you may want to open the dashboard (by clicking the button) first and then view the data update as you scan the card. The data should show up in the dashboard and you should be done with the simulation. Please make sure to use all IDs for best result. Have fun! (we know this may not be that fun to watch but we took the time to do it, please appreciate it a little bit)</p>
+        <p>This may seem pretty straight forward but it might confuse some people. In order to effectively simulate the hardware, you will need to select any of the IDs that are listed. Please do not choose the same ID more than once. The buttons are used to complete the simulation either by scanning the RFID card/tag or by going to the dashboard. Order of clicking does not matter, but you may want to open the dashboard (by clicking the button) first and then view the data update as you scan the card. The data should show up in the dashboard and you should be done with the simulation. Please make sure to use all IDs for best result. Have fun! (we know this may not be that fun to watch but we took the time to do it, please appreciate it a little bit)</p>
       </div>
 
       <footer>
