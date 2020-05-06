@@ -124,6 +124,30 @@ footer p {
   margin-bottom: 40px;
   padding-bottom: 20px;
 }
+#one {
+  max-height: 7%;
+}
+#two {
+  max-height: 3%;
+}
+#three {
+  max-height: 9%;
+}
+#four {
+  max-height: 5%;
+}
+#five {
+  max-height: 8%;
+}
+#six {
+  max-height: 6%;
+}
+#seven {
+  max-height: 9%;
+}
+#eight {
+  max-height: 8%;
+}
 
 /*global styling*/
 .sec2 h1 {
@@ -151,6 +175,12 @@ footer p {
 #text-list li {
   margin-bottom: 7px;
 }
+.sec2 img {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
 
 /*laptop version*/
 @media only screen and (min-width: 1080px) {
@@ -183,6 +213,10 @@ footer p {
   .sec2 {
     margin-top: -28.2%;
   }
+  .sec2, #pad{
+    padding-bottom: 0;
+  }
+
   .grid {
     display: grid;
     margin-top: 10px;

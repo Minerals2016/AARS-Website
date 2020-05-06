@@ -50,7 +50,7 @@
           <ul id="text-list">
             <li>Intermediate familiarity with Python</li>
             <li>Intermediate familiarity with JavaScript</li>
-            <li>Basic familiarity with JSON /*might get deleted*/</li>
+            <li>Basic familiarity with JSON </li>
             <li>Basic familiarity with HTML and CSS </li>
             <li>Basic familiarity with electronics</li>
             <li>5 days to 1 week of full-time dedication</li>
@@ -60,7 +60,7 @@
           <ul id="text-list">
             <li>Intermediate to advanced familiarity with Python</li>
             <li>Intermediate to advanced familiarity with JavaScript</li>
-            <li>Intermediate familiarity with JSON /*might get deleted*/</li>
+            <li>Intermediate familiarity with JSON </li>
             <li>Intermediate familiarity HTML and CSS</li>
             <li>Basic familiarity with electronics</li>
             <li>1 to two weeks of full-time dedication</li>
@@ -82,14 +82,33 @@
             <li>Peripherals for Raspberry Pi or computer</li>
           </ul>
         <p><em>Note: Original material list is located on Resources page</em></p>
+        <p><em>Note2: These are the instructions for what we built. The previous materials and skill requirements are for those that were planned. Current instructions are for what we have done. </em></p>
 
 
-        <h2>Building Local Raspberry Pi RFID detector (simulated)</h2>
-        <p>We were unable to do this part due to not having the hardware necessary to complete it. We realized that we could simulate this part by instead setting this on the web. Building a drag and drop for the ID for the RP will be more complex and will take longer so we will simulate this using a text-line approach.</p>
+        <h2>Building Local Raspberry Pi RFID detector (simulated):</h2>
+        <p>In order to simulate the RFID detector, we will use the capabilities of HTML and JS in order to achieve this. We will create the webpage first in order to recreate the “scan” action and to get the input for JS. We will only create a small form which will have a ‘select’ option as well as a button to scan the ID. The IDs will be placed in the select input and the button will be linked with an onclick event. Of course, we will have id options for our html tags in order to use it with JS later. Here is what the code should look like:</p>
+        <img src="../Images/one.png" id="one">
+        <p>This is the simple view and should look something like this: </p>
+        <img src="../Images/two.png" id="two">
 
-        <p>We can get a function to output the date and then make an imaginary ID on a variable. We will write all of this under one function to keep it on the same scope. This is the most basic you can get with it.</p>
+        <h2>Building the Dashboard UI</h2>
+        <p>So, in the first step, we only did the UI for the input, so we will now build the UI for the output. In order to do that, we decided to use a table to make it teacher friendly. The table will be long depending on how many students you have in a class. To create the table please refer to <a href="https://www.w3schools.com/html/html_tables.asp">this site</a>. We will also include id options for all html tags used in the table (in order to write input later). Your html should look something like this: </p>
+        <img src="../Images/three.png" id="three">
+        <p><em>Please note: this image is just a snippet of the whole scale of the table. Class is also used to hide elements from mobile view using .hide {display: none;}</em></p>
+        <p>The UI of the database should look something like this: </p>
+        <img src="../Images/four.png" id="four">
+        <p>Once you are done with that, you can go to the next step (don’t forget the ids).</p>
 
-        <p><em>/*More detailed instructions will come out once I get to this part*/</em></p>
+        <h2>Hooking up dashboard to JS: </h2>
+        <p>Once we have the table dashboard set up, we are now ready to hook that up to give it functionality. You will use JS so we will make a new file. After you made the new file, you will make a function that will get called when you click the button. After that, you will need to get the ids of all the tags from the table (which is why we require all ids on all tags of the table). To do that use var [any name] = document.getElementById(“[id of tag]”). Note: don’t copy the [] it’s there so you can place something in there. The declaration should look something like this:</p>
+        <img src="../Images/five.png" alt="" id="five">
+        <p>We will now be creating the timer for the timestamp. This is required as it is the bases on how the program determines whether a person is present, absent, or if they do not belong there. Time in JS is relatively simple (compared to other languages like Python) and uses the time function to get the time. We will create the function like shown below: </p>
+        <img src="../Images/six.png" alt="" id="six">
+        <p>After that time function, we will now create the conditionals for all students in the id array. For this, we need to get the value from the choices on the input simulator from html and will get it here with the .value selector. We need to check whether the person is even in the class, if it isn’t, it gets tagged red. This is what that code looks like: </p>
+        <img src="../Images/seven.png" alt="" id="seven">
+        After we are done with that, we need to then get another conditional to tell the status of the person that is getting scanned as well as inputting manual data into the database. To do this, make sure to copy this code below:
+        <img src="../Images/eight.png" alt="" id="eight">
+        <p id="pad">We are now done with everything and you have simulated the hardware and one portion of the database. If this was the original project, there would be 2 more databases to build. Hope this guide was useful! Please check our resources page if you are still stuck and need more help.</p>
       </div>
 
       <footer>
