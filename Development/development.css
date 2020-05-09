@@ -177,10 +177,8 @@ footer p {
 }
 .sec2 img {
   width: 100%;
-  display: block;
   margin-top: 20px;
 }
-
 
 /*laptop version*/
 @media only screen and (min-width: 1080px) {
@@ -212,9 +210,6 @@ footer p {
   }
   .sec2 {
     margin-top: -28.2%;
-  }
-  .sec2, #pad{
-    padding-bottom: 0;
   }
 
   .grid {
